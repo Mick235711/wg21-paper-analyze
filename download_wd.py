@@ -14,7 +14,8 @@ def main() -> None:
     json_dict = json.load(open("index.json", "r"))
     wd_dict = {}
     for code, value in json_dict.items():
-        if "Working Draft, Standard for Programming Language C++" in value["title"] and not \
+        if ("Working Draft, Standard for Programming Language C++" in value["title"] or
+            "Working Draft, Programming Languages -- C++" in value["title"]) and not \
                 "Editor's Report" in value["title"]:
             wd_dict[code] = value
 
