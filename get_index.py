@@ -4,8 +4,10 @@
 """ Get the index file """
 
 # Libraries
-import json
 from collections import Counter
+from datetime import date, datetime
+from typing import Optional
+import json
 import requests
 
 
@@ -87,6 +89,33 @@ def process_subgroup(subgroup_str: str) -> list[str]:
     return sorted(sg_list2)
 
 
+def regularize_date(date_str: str) -> Optional[date]:
+    """ Regularize date strings """
+    if "unknown" == date_str.lower():
+        return None
+    if "-" in date_str:
+        # try to parse as yyyy-mm-dd
+        date_str = date_str.replace("-", "")
+        assert date_str.isdigit(), date_str
+        if int(date_str[4:6]) > 12:
+            print(f"Warning: change {date_str} to ", end="")
+            date_str = date_str[:4] + "0" + date_str[5:]
+            print(date_str)
+        return date.fromisoformat(date_str)
+
+    # try to parse as dd mmm yyyy
+    date_str = date_str.replace("Sept", "Sep").replace("Sepember", "Sep").replace(",", "")
+    if not date_str[0].isdigit():
+        try:
+            return datetime.strptime(date_str, "%b %Y").date()
+        except ValueError:
+            return datetime.strptime(date_str, "%B %Y").date()
+    try:
+        return datetime.strptime(date_str, "%d %b %Y").date()
+    except ValueError:
+        return datetime.strptime(date_str, "%d %B %Y").date()
+
+
 def main() -> None:
     """ Main function """
     req = requests.get("https://wg21.link/index.json")
@@ -108,6 +137,13 @@ def main() -> None:
             value["revision"] = int(code_left[r_index + 1:])
         else:
             value["number"] = int(code_left)
+
+        if "date" in value:
+            result = regularize_date(value["date"])
+            if result is None:
+                del value["date"]
+            else:
+                value["date"] = str(result)
 
         if value["type"] == "paper":
             if "subgroup" in value:
