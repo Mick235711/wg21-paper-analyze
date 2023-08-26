@@ -54,7 +54,7 @@ def main() -> None:
 
         if len(reader.outline) == 0:
             wd_dict[draft_name] = prop
-            print(" No Outline", flush=True)
+            print(f" No Outline. Date = {prop['date']}", flush=True)
             continue
 
         # Fetch page count of core, library and annex
@@ -89,7 +89,7 @@ def main() -> None:
         prop["annex"] = end_page - annex_page
 
         wd_dict[draft_name] = prop
-        print(" Done!", flush=True)
+        print(f" Done! Date = {prop['date']}", flush=True)
 
     # Write to file
     with open("wd_index.json", "w") as fp:
