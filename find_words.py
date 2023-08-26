@@ -26,8 +26,10 @@ def main() -> None:
         print(f"Searching {code}...", end="", flush=True)
         reader = PdfReader(f"working-drafts/{code}.pdf")
         total = {word: 0 for word in words}
+        total["total"] = 0
         for page in reader.pages:
             text = page.extract_text()
+            total["total"] += len(re.findall(r'\w+', text))
             for word in words:
                 total[word] += sum(1 for _ in re.finditer(fr'\b{re.escape(word)}\b', text))
 
