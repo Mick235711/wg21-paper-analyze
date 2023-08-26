@@ -5,7 +5,86 @@
 
 # Libraries
 import json
+from collections import Counter
 import requests
+
+
+name_aliases: dict[str, list[str]] = {
+    # Working Groups
+    "WG14": [],
+    "WG21": ["All", "All of WG21"],
+
+    # Stage 2 & 3 Groups
+    "CWG": ["Core"],
+    "EWG": ["Evolution", "Posterity"],
+    "LWG": ["Library"],
+    "LEWG": ["Library Evolution", "Library Evoution"],
+
+    # Stage 1 Groups
+    "SG1": ["Concurrency", "Concurrency and Parallelism"],
+    "SG2": ["Modules"],
+    "SG3": ["Filesystem", "File System"],
+    "SG4": ["Networking"],
+    "SG5": ["Transaction Memory", "Transactional Memory"],
+    "SG6": ["Numerics", "Numeric"],
+    "SG7": ["Reflection"],
+    "SG8": ["Concepts"],
+    "SG9": ["Ranges"],
+    "SG10": ["Feature Test", "Feature Testing"],
+    "SG11": ["Databases", "Database"],
+    "SG12": ["Undefined Behavior", "Undefined and Unspecified Behavior"],
+    "SG13": ["I/O", "Graphics"],
+    "SG14": ["Low Latency"],
+    "SG15": ["Tooling"],
+    "SG16": ["Unicode", "Text"],
+    "SG17": ["EWGI", "EWG Incubator", "Evolution Incubator", "EWGI SG17: EWG Incubator"],
+    "SG18": ["LEWGI", "LEWG Incubator", "Library Evolution Incubator",
+             "LEWGI SG18: LEWG Incubator"],
+    "SG19": ["Machine Learning"],
+    "SG20": ["Education"],
+    "SG21": ["Contracts"],
+    "SG22": ["C/C++ Liaison", "WG14 Liason", "Compatability"],
+    "SG23": ["Safety & Security", "Safety and Security"],
+
+    # Others
+    "Performance": [],
+    "DG": ["Direction Group"]
+}
+
+
+def process_subgroup(subgroup_str: str) -> list[str]:
+    """ Process subgroup string """
+    # First split out different subgroups
+    sg_list: list[str] = []
+    for sg in [x.strip() for x in subgroup_str.split(",")]:
+        if "/" in sg and "I/O" not in sg.upper() and "C/C++" not in sg.upper():
+            sg_list = sg_list + [x.strip() for x in sg.split("/")]
+        elif "." in sg:
+            sg_list = sg_list + [x.strip() for x in sg.split(".")]
+        elif "and" in sg and not sg.upper().startswith("SG1") and not sg.upper().startswith("SG23"):
+            # SG1, SG12, SG23 excluded
+            sg_list = sg_list + [x.strip() for x in sg.split("and")]
+        else:
+            sg_list.append(sg)
+
+    # Construct reverse map
+    sg_map: dict[str, str] = {}
+    for code, aliases in name_aliases.items():
+        sg_map[code.lower()] = code
+        for alias in aliases:
+            sg_map[alias.lower()] = code
+            sg_map[f"{code} {alias}".lower()] = code
+
+    # Filter through
+    sg_list2 = []
+    for sg in sg_list:
+        if sg.strip() == "":
+            continue
+        sg = sg.rstrip("?")
+        assert sg.lower() in sg_map, (subgroup_str, sg)
+        sg_list2.append(sg_map[sg.lower()])
+
+    return sorted(sg_list2)
 
 
 def main() -> None:
@@ -32,7 +111,7 @@ def main() -> None:
 
         if value["type"] == "paper":
             if "subgroup" in value:
-                value["subgroup"] = [x.strip() for x in value["subgroup"].split(",")]
+                value["subgroup"] = process_subgroup(value["subgroup"])
 
             if "author" in value:
                 value["author"] = [x.strip() for x in value["author"].split(",")]
@@ -59,6 +138,15 @@ def main() -> None:
     with open("index.json", "w") as fp:
         json.dump(json_dict_new, fp, indent=4)
         print(f"Write {len(json_dict_new)} entries to index.json.")
+
+    # Give an occurrence count
+    groups: list[str] = []
+    for group_list in [v["subgroup"] for v in json_dict_new.values() if "subgroup" in v]:
+        for group in group_list:
+            groups.append(group)
+    print("Subgroup occurrences:")
+    for group, count in Counter(groups).most_common():
+        print(f"{group} -> {count} papers")
 
 
 # Call main
