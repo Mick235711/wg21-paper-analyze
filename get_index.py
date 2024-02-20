@@ -45,12 +45,13 @@ name_aliases: dict[str, list[str]] = {
     "SG19": ["Machine Learning"],
     "SG20": ["Education"],
     "SG21": ["Contracts"],
-    "SG22": ["C/C++ Liaison", "WG14 Liason", "Compatability"],
+    "SG22": ["C/C++ Liaison", "WG14 Liason", "Compatability", "Compatibility"],
     "SG23": ["Safety & Security", "Safety and Security"],
 
     # Others
     "Performance": [],
-    "DG": ["Direction Group"]
+    "DG": ["Direction Group"],
+    "ABI": ["ABI Review Group", "ARG ABI Review Group"]
 }
 
 

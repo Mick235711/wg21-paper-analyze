@@ -4,6 +4,7 @@
 """ Find certain words in all the working drafts """
 
 # Library
+import os
 import json
 import sys
 import re
@@ -13,13 +14,10 @@ from pypdf import PdfReader
 def main() -> None:
     """ Main function """
     # Read indexes
-    with open("wd_index.json", "r") as fp:
+    with open("word_output.json" if os.path.exists("word_output.json") else "wd_index.json", "r") as fp:
         wd_dict = json.load(fp)
 
-    if len(sys.argv) == 1:
-        print("No words provided!")
-        sys.exit(1)
-    words = [x.strip() for x in sys.argv[1:]]
+    words = [x.strip() for x in sys.stdin]
 
     # Find words
     for code in wd_dict.keys():
@@ -34,7 +32,9 @@ def main() -> None:
                 total[word] += sum(1 for _ in re.finditer(fr'\b{re.escape(word)}\b', text))
 
         print(" Done! " + ", ".join([f"{k} = {v}" for k, v in total.items()]), flush=True)
-        wd_dict[code]["words_count"] = total
+        if "words_count" not in wd_dict[code]:
+            wd_dict[code]["words_count"] = {}
+        wd_dict[code]["words_count"].update(total)
 
     # Write to file
     with open("word_output.json", "w") as fp:
