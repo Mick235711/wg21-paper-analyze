@@ -19,7 +19,7 @@ def main() -> None:
               end="", flush=True)
         reader = PdfReader(file)
         draft_name = file[file.find("/") + 1:file.rfind(".")].strip()
-        pages = len(reader.pages)
+        pages = reader.get_num_pages()
 
         # Basic properties
         prop = {
@@ -64,22 +64,46 @@ def main() -> None:
         lib_page = -1
         annex_page = -1
         end_page = -1
+        section_dict = {}
+        last_start = -1
+        last_section = ""
         for outline in (reader.outline if len(reader.outline) > 10 else reader.outline[-1]):
             if isinstance(outline, list):
                 continue
             assert outline.title is not None, outline
+            cur_page = reader.get_destination_page_number(outline)
+            if cur_page is None:
+                cur_page = 0
             if outline.title[0].isdigit() and start_page == -1:
-                start_page = reader.get_destination_page_number(outline)
+                start_page = cur_page
             if "library intro" in outline.title.lower() and lib_page == -1:
-                lib_page = reader.get_destination_page_number(outline)
+                lib_page = cur_page
             if start_page != -1 and not outline.title[0].isdigit() and annex_page == -1:
-                annex_page = reader.get_destination_page_number(outline)
+                annex_page = cur_page
             if "bibliography" in outline.title.lower() and end_page == -1:
-                end_page = reader.get_destination_page_number(outline)
+                end_page = cur_page
             if outline.title.lower().startswith("cross") and end_page == -1:
-                end_page = reader.get_destination_page_number(outline)
+                end_page = cur_page
             if outline.title.lower().startswith("index") and end_page == -1:
-                end_page = reader.get_destination_page_number(outline)
+                end_page = cur_page
+
+            section_name = outline.title.strip()
+            if section_name[0].isdigit():
+                section_name = section_name[section_name.find(" ") + 1:].strip()
+                assert not section_name[0].isdigit(), section_name
+            elif section_name[1] == " " and section_name[0] in "ABCDE":
+                section_name = section_name[2:].strip()
+            elif section_name.startswith("Annex"):
+                if " - " in section_name:
+                    section_name = section_name[section_name.find(" - ") + 3:].strip()
+                else:
+                    section_name = section_name[6:].strip()
+                    assert section_name[1] == " " and section_name[0] in "ABCDE", section_name
+                    section_name = section_name[2:].strip()
+            if last_start >= 0:
+                section_dict[last_section] = cur_page - last_start
+            last_start = cur_page
+            last_section = section_name
         if end_page == -1:
             end_page = pages
         assert 0 < start_page < lib_page < annex_page < end_page <= pages,\
@@ -87,6 +111,8 @@ def main() -> None:
         prop["core"] = lib_page - start_page
         prop["library"] = annex_page - lib_page
         prop["annex"] = end_page - annex_page
+        section_dict[last_section] = pages - last_start
+        prop["sections"] = section_dict
 
         wd_dict[draft_name] = prop
         print(f" Done! Date = {prop['date']}", flush=True)
