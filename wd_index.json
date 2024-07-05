@@ -261,7 +261,7 @@
             "Compatibility": 16,
             "Compatibility features": 16,
             "Universal-character-names": 2,
-            "F Cross references": 61
+            "Cross references": 61
         }
     },
     "N2284": {
@@ -305,7 +305,7 @@
             "Compatibility": 16,
             "Compatibility features": 18,
             "Universal-character-names": 2,
-            "F Cross references": 61
+            "Cross references": 61
         }
     },
     "N2315": {
@@ -349,7 +349,7 @@
             "Compatibility": 16,
             "Compatibility features": 18,
             "Universal-character-names": 2,
-            "F Cross references": 61
+            "Cross references": 61
         }
     },
     "N2369": {
@@ -393,7 +393,7 @@
             "Compatibility": 16,
             "Compatibility features": 18,
             "Universal-character-names": 2,
-            "F Cross references": 61
+            "Cross references": 61
         }
     },
     "N2461": {
@@ -439,7 +439,7 @@
             "Compatibility": 16,
             "Compatibility features": 18,
             "Universal-character-names": 2,
-            "F Cross references": 61
+            "Cross references": 61
         }
     },
     "N2521": {
@@ -486,7 +486,7 @@
             "Compatibility": 16,
             "Compatibility features": 18,
             "Universal-character-names": 2,
-            "F Cross references": 64
+            "Cross references": 64
         }
     },
     "N2588": {
@@ -532,7 +532,7 @@
             "Compatibility": 16,
             "Compatibility features": 18,
             "Universal-character-names": 2,
-            "F Cross references": 64
+            "Cross references": 64
         }
     },
     "N2606": {
@@ -578,7 +578,7 @@
             "Compatibility": 16,
             "Compatibility features": 18,
             "Universal-character-names": 2,
-            "F Cross references": 64
+            "Cross references": 64
         }
     },
     "N2691": {
@@ -624,7 +624,7 @@
             "Compatibility": 16,
             "Compatibility features": 18,
             "Universal-character-names": 2,
-            "F Cross references": 64
+            "Cross references": 64
         }
     },
     "N2723": {
@@ -672,7 +672,7 @@
             "Compatibility": 14,
             "Compatibility features": 16,
             "Universal-character-names": 2,
-            "F Cross references": 16,
+            "Cross references": 16,
             "Index": 41
         }
     },
@@ -1123,7 +1123,7 @@
             "Compatibility": 14,
             "Compatibility features": 20,
             "Universal character names for identifier characters": 1,
-            "F Cross references": 17,
+            "Cross references": 17,
             "Index": 25,
             "Index of Grammar Productions": 3,
             "Index of Library Names": 36,
@@ -1176,7 +1176,7 @@
             "Compatibility": 14,
             "Compatibility features": 20,
             "Universal character names for identifier characters": 1,
-            "F Cross references": 18,
+            "Cross references": 18,
             "Index": 28,
             "Index of grammar productions": 3,
             "Index of library names": 36,
@@ -1229,7 +1229,7 @@
             "Compatibility": 19,
             "Compatibility features": 20,
             "Universal character names for identifier characters": 1,
-            "F Cross references": 17,
+            "Cross references": 17,
             "Index": 29,
             "Index of grammar productions": 3,
             "Index of library names": 36,
@@ -1282,7 +1282,7 @@
             "Compatibility": 18,
             "Compatibility features": 20,
             "Universal character names for identifier characters": 1,
-            "F Cross references": 17,
+            "Cross references": 17,
             "Index": 29,
             "Index of grammar productions": 3,
             "Index of library names": 36,
@@ -1335,7 +1335,7 @@
             "Compatibility": 19,
             "Compatibility features": 20,
             "Universal character names for identifier characters": 1,
-            "F Cross references": 17,
+            "Cross references": 17,
             "Index": 29,
             "Index of grammar productions": 3,
             "Index of library names": 36,
@@ -1388,7 +1388,7 @@
             "Compatibility": 19,
             "Compatibility features": 20,
             "Universal character names for identifier characters": 1,
-            "F Cross references": 18,
+            "Cross references": 18,
             "Index": 29,
             "Index of grammar productions": 3,
             "Index of library names": 37,
@@ -1441,7 +1441,7 @@
             "Compatibility": 20,
             "Compatibility features": 20,
             "Universal character names for identifier characters": 1,
-            "F Cross references": 18,
+            "Cross references": 18,
             "Index": 29,
             "Index of grammar productions": 3,
             "Index of library names": 37,
@@ -1494,7 +1494,7 @@
             "Compatibility": 20,
             "Compatibility features": 20,
             "Universal character names for identifier characters": 1,
-            "F Cross references": 18,
+            "Cross references": 18,
             "Index": 29,
             "Index of grammar productions": 3,
             "Index of library names": 37,
@@ -1547,7 +1547,7 @@
             "Compatibility": 21,
             "Compatibility features": 12,
             "Universal character names for identifier characters": 1,
-            "F Cross references": 18,
+            "Cross references": 18,
             "Index": 29,
             "Index of grammar productions": 3,
             "Index of library names": 36,
@@ -1600,7 +1600,7 @@
             "Compatibility": 21,
             "Compatibility features": 12,
             "Universal character names for identifier characters": 1,
-            "F Cross references": 18,
+            "Cross references": 18,
             "Index": 29,
             "Index of grammar productions": 3,
             "Index of library names": 36,
@@ -1653,7 +1653,7 @@
             "Compatibility": 21,
             "Compatibility features": 12,
             "Universal character names for identifier characters": 1,
-            "F Cross references": 18,
+            "Cross references": 18,
             "Index": 29,
             "Index of grammar productions": 3,
             "Index of library names": 37,
@@ -1706,7 +1706,7 @@
             "Compatibility": 23,
             "Compatibility features": 11,
             "Universal character names for identifier characters": 1,
-            "F Cross references": 18,
+            "Cross references": 18,
             "Index": 30,
             "Index of grammar productions": 4,
             "Index of library names": 37,
@@ -1759,7 +1759,7 @@
             "Compatibility": 23,
             "Compatibility features": 16,
             "Universal character names for identifier characters": 1,
-            "F Cross references": 20,
+            "Cross references": 20,
             "Index": 30,
             "Index of grammar productions": 4,
             "Index of library names": 41,
@@ -1812,7 +1812,7 @@
             "Compatibility": 24,
             "Compatibility features": 16,
             "Universal character names for identifier characters": 1,
-            "F Cross references": 20,
+            "Cross references": 20,
             "Index": 31,
             "Index of grammar productions": 4,
             "Index of library names": 42,

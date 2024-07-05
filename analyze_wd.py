@@ -91,7 +91,7 @@ def main() -> None:
             if section_name[0].isdigit():
                 section_name = section_name[section_name.find(" ") + 1:].strip()
                 assert not section_name[0].isdigit(), section_name
-            elif section_name[1] == " " and section_name[0] in "ABCDE":
+            elif section_name[1] == " " and section_name[0] in "ABCDEF":
                 section_name = section_name[2:].strip()
             elif section_name.startswith("Annex"):
                 if " - " in section_name:
