@@ -8,19 +8,32 @@ import os
 import json
 import sys
 import re
+import argparse
 from pypdf import PdfReader
 
 
 def main() -> None:
     """ Main function """
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--update", action="store_true", help="Update for new working drafts")
+    args = parser.parse_args()
+
     # Read indexes
     with open("word_output.json" if os.path.exists("word_output.json") else "wd_index.json", "r") as fp:
         wd_dict = json.load(fp)
 
-    words = [x.strip() for x in sys.stdin]
+    if args.update and os.path.exists("word_output.json"):
+        words = list(list(wd_dict.values())[0]["words_count"].keys())
+    else:
+        words = []
+    words = words + [x.strip() for x in sys.stdin]
 
     # Find words
-    for code in wd_dict.keys():
+    orig_dict = json.load(open("wd_index.json", "r"))
+    for code in (orig_dict.keys() if args.update else wd_dict.keys()):
+        if args.update and code in wd_dict and "words_count" in wd_dict[code]:
+            print(f"Skipping {code}...", flush=True)
+            continue
         print(f"Searching {code}...", end="", flush=True)
         reader = PdfReader(f"working-drafts/{code}.pdf")
         total = {word: 0 for word in words}
@@ -32,6 +45,10 @@ def main() -> None:
                 total[word] += sum(1 for _ in re.finditer(fr'\b{re.escape(word)}\b', text))
 
         print(" Done! " + ", ".join([f"{k} = {v}" for k, v in total.items()]), flush=True)
+        if code not in wd_dict:
+            wd_dict[code] = orig_dict[code]
+            if "sections" in wd_dict[code]:
+                del wd_dict[code]["sections"]
         if "words_count" not in wd_dict[code]:
             wd_dict[code]["words_count"] = {}
         wd_dict[code]["words_count"].update(total)
@@ -39,7 +56,7 @@ def main() -> None:
     # Write to file
     with open("word_output.json", "w") as fp:
         json.dump(wd_dict, fp, indent=4)
-        print(f"Write {len(wd_dict)} entries to wd_index.json.")
+        print(f"Write {len(wd_dict)} entries to word_output.json.")
 
 
 # Call main
