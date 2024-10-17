@@ -26,12 +26,14 @@ def main() -> None:
         words = list(list(wd_dict.values())[0]["words_count"].keys())
     else:
         words = []
-    words = words + [x.strip() for x in sys.stdin]
+    new_words = [x.strip() for x in sys.stdin]
+    words = words + new_words
 
     # Find words
     orig_dict = json.load(open("wd_index.json", "r"))
     for code in (orig_dict.keys() if args.update else wd_dict.keys()):
-        if args.update and code in wd_dict and "words_count" in wd_dict[code]:
+        if args.update and code in wd_dict and \
+                "words_count" in wd_dict[code] and len(new_words) == 0:
             print(f"Skipping {code}...", flush=True)
             continue
         print(f"Searching {code}...", end="", flush=True)
