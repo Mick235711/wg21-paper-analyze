@@ -146,13 +146,14 @@ def main() -> None:
                         datetime.fromisoformat(version_date),
                         table.support_score(vendor, version)
                     ))
-                ax.plot([x[0] for x in draw_data], [x[1] for x in draw_data],
+                ax.plot([x[0] for x in draw_data],
+                        [100 * x[1] for x in draw_data],
                         color=vendor_data["color"], linestyle=cpp_style)
 
         ax.margins(x=0)
         ax.set_xlabel("Release Date")
-        ax.set_ylabel("Support Score")
-        ax.set_ylim(0, 1)
+        ax.set_ylabel("Supported Feature %")
+        ax.set_ylim(0, 100)
         ax.set_title(using)
 
     # Calculate legends
