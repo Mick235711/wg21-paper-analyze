@@ -132,7 +132,7 @@ def main() -> None:
                 ax.annotate(
                     f"C++{cpp_version} Final WD"
                     if cpp_version < "26" else "Current",
-                    (cpp_date, 1), annotation_clip=False,
+                    (cpp_date, 105), annotation_clip=False,
                     xytext=(-3, 0), textcoords="offset points",
                     horizontalalignment="center",
                     verticalalignment="bottom"
