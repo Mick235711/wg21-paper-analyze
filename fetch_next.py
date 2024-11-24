@@ -7,8 +7,10 @@
 import json
 import requests
 from functools import partial
+from io import BytesIO
 from tqdm import tqdm
 from bs4 import BeautifulSoup
+from pypdf import PdfReader
 
 
 def fetch_single(json_dict: dict[str, dict], keys: tuple[str, str | None]) -> str:
@@ -17,14 +19,20 @@ def fetch_single(json_dict: dict[str, dict], keys: tuple[str, str | None]) -> st
     req = requests.get(f"https://wg21.link/{key}", allow_redirects=True)
     if req.status_code == 200:
         if orig_key is None:
-            if "html" not in req.headers["content-type"]:
-                title = ""
-            else:
+            if "html" in req.headers["content-type"]:
                 html = BeautifulSoup(req.text, "lxml")
                 if html.title is None:
                     title = ""
                 else:
                     title = " " + html.title.text.replace("\n", " ")
+            elif "pdf" in req.headers["content-type"]:
+                reader = PdfReader(BytesIO(req.content))
+                if reader.metadata.title is not None:
+                    title = " " + reader.metadata.title.replace("\n", " ")
+                else:
+                    title = " " + reader.pages[0].extract_text(0).split("\n")[0].strip()
+            else:
+                title = ""
             tqdm.write(f"New paper available: {key}{title}")
         else:
             tqdm.write(f"Next revision {key} available for {orig_key}: " + json_dict[orig_key]["title"])
