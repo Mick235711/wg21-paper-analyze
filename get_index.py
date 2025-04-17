@@ -125,6 +125,9 @@ def main() -> None:
 
     # Add several useful values
     for code, value in json_dict.items():
+        if code == "draft" or code == "standard":
+            continue
+
         digit_index = len(code)
         for index, char in enumerate(code):
             if char.isdigit():
