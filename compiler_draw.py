@@ -14,7 +14,7 @@ CPP_VERSIONS: dict[str, tuple[str | None, str]] = {
     "17": ("2017-03-21", "solid"),
     "20": ("2020-04-01", "dashed"),
     "23": ("2023-05-10", "dashdot"),
-    "26": ("2024-10-16", "dotted")
+    "26": ("2025-03-15", "dotted")
 }
 COMPILER_VERSIONS = {
     "gcc": {
@@ -31,7 +31,8 @@ COMPILER_VERSIONS = {
             "12.1": "2022-05-06",
             "13.1": "2023-04-26",
             "14.1": "2024-05-06",
-            "15.1": datetime.now().date().isoformat()
+            "15.1": "2025-04-25",
+            "16.1": datetime.now().date().isoformat()
         },
         "color": "tab:blue"
     },
