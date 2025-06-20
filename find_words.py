@@ -22,7 +22,7 @@ def main() -> None:
     with open("word_output.json" if os.path.exists("word_output.json") else "wd_index.json", "r") as fp:
         wd_dict = json.load(fp)
 
-    if args.update and os.path.exists("word_output.json"):
+    if args.update or os.path.exists("word_output.json"):
         words = list(list(wd_dict.values())[0]["words_count"].keys())
     else:
         words = []
