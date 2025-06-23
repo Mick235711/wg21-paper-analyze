@@ -1,0 +1,99 @@
+2026-06-22 to 27: Brno, Czechia; Mendel University in Brno
+2026-03-23 to 28: London, UK; Phil Nash
+2025-11-03 to 08: Kona, HI, USA; Standard C++ Foundation
+2025-06-16 to 21: Sofia, Bulgaria; Chaos, C++ Alliance
+2025-02-10 to 15: Hagenberg, Austria; University of Applied Sciences, Upper Austria
+2024-11-18 to 23: Wrocław, Poland; Nokia
+2024-06-24 to 29: St. Louis, MO, USA; Bill Seymour
+2024-03-18 to 23: Tokyo, Japan; Woven by Toyota
+2023-11-06 to 11: Kona, HI, USA; Standard C++ Foundation, WorldQuant
+2023-06-12 to 17: Varna, Bulgaria; VMware, Chaos
+2023-02-06 to 11: Issaquah, WA, USA; Standard C++ Foundation, WorldQuant, Edison Design Group
+2022-11-07 to 12: Kona, HI, USA; Standard C++ Foundation
+(virtual) 2022-07-25: Zoom virtual plenary meeting
+(virtual) 2022-02-07: Zoom virtual plenary meeting
+(virtual) 2021-10-04: Zoom virtual plenary meeting
+(virtual) 2021-06-07: Zoom virtual plenary meeting
+(virtual) 2021-02-22: Zoom virtual plenary meeting
+(virtual) 2020-11-09: Zoom virtual plenary meeting
+2020-02-10 to 15: Prague, Czech Republic; Avast Software
+2019-11-04 to 09: Belfast, Northern Ireland; clearpool.io, Archer-Yates, Microsoft, C++ Alliance, MCS Group, Instil, Standard C++ Foundation
+2019-07-15 to 20: Cologne, Germany; Nicolai Josuttis, Standard C++ Foundation
+2019-02-18 to 23: Kona, HI, USA; Standard C++ Foundation, NVIDIA, Plum Hall, Jens Maurer
+2018-11-05 to 10: San Diego, CA, USA; Qualcomm
+2018-06-04 to 09: Rapperswil, Switzerland; HSR Hochschule für Technik, Zühlke, Netcetera, Bbv, Crealogix, Meeting C++, SNV, BMW
+2018-03-12 to 17: Jacksonville, FL, USA; Standard C++ Foundation, Perennial
+2017-11-06 to 11: Albuquerque, NM, USA; Sandia National Laboratories
+2017-07-10 to 15: Toronto, Canada; University of Toronto, Fields Institute, Waterfront International, Codeplay, IBM, Google, Christie Digital
+2017-02-27 to 03-04: Kona, HI, USA; Standard C++ Foundation, Plum Hall
+2016-11-07 to 12: Issaquah, WA, USA; Microsoft, Standard C++ Foundation
+2016-06-20 to 25: Oulu, Finland; Symbio
+2016-02-29 to 03-05: Jacksonville, FL, USA; INCITS, Standard C++ Foundation, Perennial
+2015-10-19 to 24: Kona, HI, USA; Plum Hall, Standard C++ Foundation
+2015-05-04 to 09: Lenexa, Kansas, USA; Lexmark
+2015-02-23 to 27: Cologne, Germany; Parstream, IT-Communication
+2015-01-26 to 28: Skillman, New Jersey, USA; Edison Design Group, Bloomberg.
+2014-11-03 to 08: Urbana-Champaign, IL, USA; Riverbed, University of Illinois at Urbana-Champaign
+2014-06-16 to 21: Rapperswil, Switzerland; HSR Hochschule für Technik
+2014-02-10 to 15: Issaquah, WA, USA; Microsoft, Standard C++ Foundation
+2013-09-23 to 28: Chicago, IL, USA; DRW Trading Group
+2013-04-15 to 20: Bristol, UK; ACCU, Google, Archer-Yates, GetCo, Red Hat, Gnu C++ User
+2012-10-15 to 19: Portland, OR, USA; Intel
+2012-02-06 to 10: Kona, HI, USA; Plum Hall, Bloomberg
+2011-08-15 to 19: Bloomington, IN, USA; University of Indiana
+2011-03-21 to 26: Madrid, Spain; Telefónica I+D
+2010-11-08 to 13: Batavia, IL, USA; Fermilab
+2010-08-02 to 07: Rapperswil, Switzerland; HSR Hochschule für Technik
+2010-03-08 to 13: Pittsburgh, PA, USA; CERT
+2009-10-19 to 24: Santa Cruz, CA, USA; Dinkumware, EDG, Gimpel Software, Bloomberg
+2009-07-13 to 18: Frankfurt, Germany; Interactive Data Managed Solutions
+2009-03-02 to 06: Summit, NJ, USA; Edison Design Group, Dinkumware, Sun, Plum Hall
+2008-09-14 to 20: San Francisco, CA, USA; Google
+2008-06-08 to 13: Sophia Antipolis, France; Texas A&M University
+2008-02-24 to 29: Bellevue, WA, USA; Microsoft
+2007-09-30 to 10-06: Kona, HI, USA; Plum Hall
+2007-07-15 to 20: Toronto, Canada; IBM
+2007-04-15 to 20: Oxford, UK; ACCU, Google
+2006-10-15 to 20: Portland, OR, USA; Intel
+2006-04-02 to 07: Berlin, Germany; SAP
+2005-10-02 to 08: Mt. Tremblant, PQ, Canada; Maurya, Sun, Intel
+2005-04-10 to 15: Lillehammer, Norway; Norwegian Standards
+2004-10-17 to 22: Redmond, WA, USA; Microsoft
+2004-03-21 to 26: Sydney, Australia; Standards Australia, Whitesmiths
+2003-10-26 to 31: Kona, HI, USA; Plum Hall
+2003-04-06 to 11: Oxford, UK; BSI
+2002-10-22 to 27: Santa Cruz, CA USA; Dinkumware
+2002-04-21 to 26: Curacao, Netherlands Antilles; Netherlands
+2001-10-21 to 26: Redmond, WA, USA; Microsoft
+2001-04-30 to 05-04: Copenhagen, Denmark; Danish Standards
+2000-10-23 to 27: Toronto, ON, Canada; IBM, PeerDirect, Xerox
+2000-04-17 to 21: Tokyo, Japan; ITSCJ, NEC
+1999-10-20 to 26: Kona, Hawaii, USA; Plum Hall
+1999-04-11 to 16: Dublin, Ireland; Irish Standards, O’Riordan
+1998-10-06 to 09: Santa Cruz, CA, USA; SGI, Plum Hall, Perennial
+1998-03-08 to 13: Sophia Antipolis, FR; AFNOR, Ilog
+1997-11-09 to 14: Morristown, New Jersey, USA; AT&T
+1997-07-13 to 18: Cambridge, UK; Programming Research
+1997-03-09 to 14: Nashua, NH, USA; Digital Equip. Corp.
+1996-11: Kona, HI; Plum Hall
+1996-07: Stockholm, Sweden; Ericsson
+1996-03: Santa Cruz, CA; Borland
+1995-11: Tokyo, Japan; IBM
+1995-07: Monterey, CA; Sun Microsystems
+1995-03: Austin, TX; Motorola
+1994-11: Valley Forge, PA; Unisys
+1994-07: Waterloo, Canada; Watcom
+1994-03: San Diego, CA; ATT/NCR
+1993-11: San Jose, CA; Taligent
+1993-07: Munich, Germany; Siemens Nixdorf
+1993-03: Portland, OR; Sequent, Tektronix, Mentor Graphics
+1992-11: Boston, MA; OSF
+1992-07: Toronto, Canada; IBM
+1992-03: London, United Kingdom; Symantec
+1991-11: Dallas, TX; Texas Instruments
+1991-06: Lund, Sweden; Lund Institute
+1991-03: Nashua, NH; DEC
+1990-11: Palo Alto, CA; HP
+1990-07: Seattle, WA; Microsoft
+1990-03: Somerset, NJ; ATT
+1989-12: Washington, DC; Hewlett-Packard

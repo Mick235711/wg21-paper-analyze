@@ -1,0 +1,846 @@
+[
+    {
+        "start_date": "2026-06-22",
+        "end_date": "2026-06-27",
+        "location": "Brno, Czechia",
+        "sponsor": [
+            "Mendel University in Brno"
+        ]
+    },
+    {
+        "start_date": "2026-03-23",
+        "end_date": "2026-03-28",
+        "location": "London, UK",
+        "sponsor": [
+            "Phil Nash"
+        ]
+    },
+    {
+        "start_date": "2025-11-03",
+        "end_date": "2025-11-08",
+        "location": "Kona, HI, USA",
+        "sponsor": [
+            "Standard C++ Foundation"
+        ]
+    },
+    {
+        "start_date": "2025-06-16",
+        "end_date": "2025-06-21",
+        "location": "Sofia, Bulgaria",
+        "sponsor": [
+            "Chaos",
+            "C++ Alliance"
+        ]
+    },
+    {
+        "start_date": "2025-02-10",
+        "end_date": "2025-02-15",
+        "location": "Hagenberg, Austria",
+        "sponsor": [
+            "University of Applied Sciences",
+            "Upper Austria"
+        ]
+    },
+    {
+        "start_date": "2024-11-18",
+        "end_date": "2024-11-23",
+        "location": "Wrocław, Poland",
+        "sponsor": [
+            "Nokia"
+        ]
+    },
+    {
+        "start_date": "2024-06-24",
+        "end_date": "2024-06-29",
+        "location": "St. Louis, MO, USA",
+        "sponsor": [
+            "Bill Seymour"
+        ]
+    },
+    {
+        "start_date": "2024-03-18",
+        "end_date": "2024-03-23",
+        "location": "Tokyo, Japan",
+        "sponsor": [
+            "Woven by Toyota"
+        ]
+    },
+    {
+        "start_date": "2023-11-06",
+        "end_date": "2023-11-11",
+        "location": "Kona, HI, USA",
+        "sponsor": [
+            "Standard C++ Foundation",
+            "WorldQuant"
+        ]
+    },
+    {
+        "start_date": "2023-06-12",
+        "end_date": "2023-06-17",
+        "location": "Varna, Bulgaria",
+        "sponsor": [
+            "VMware",
+            "Chaos"
+        ]
+    },
+    {
+        "start_date": "2023-02-06",
+        "end_date": "2023-02-11",
+        "location": "Issaquah, WA, USA",
+        "sponsor": [
+            "Standard C++ Foundation",
+            "WorldQuant",
+            "Edison Design Group"
+        ]
+    },
+    {
+        "start_date": "2022-11-07",
+        "end_date": "2022-11-12",
+        "location": "Kona, HI, USA",
+        "sponsor": [
+            "Standard C++ Foundation"
+        ]
+    },
+    {
+        "start_date": "2022-07-25",
+        "end_date": "2022-07-25",
+        "location": "(virtual)",
+        "sponsor": "(none)"
+    },
+    {
+        "start_date": "2022-02-07",
+        "end_date": "2022-02-07",
+        "location": "(virtual)",
+        "sponsor": "(none)"
+    },
+    {
+        "start_date": "2021-10-04",
+        "end_date": "2021-10-04",
+        "location": "(virtual)",
+        "sponsor": "(none)"
+    },
+    {
+        "start_date": "2021-06-07",
+        "end_date": "2021-06-07",
+        "location": "(virtual)",
+        "sponsor": "(none)"
+    },
+    {
+        "start_date": "2021-02-22",
+        "end_date": "2021-02-22",
+        "location": "(virtual)",
+        "sponsor": "(none)"
+    },
+    {
+        "start_date": "2020-11-09",
+        "end_date": "2020-11-09",
+        "location": "(virtual)",
+        "sponsor": "(none)"
+    },
+    {
+        "start_date": "2020-02-10",
+        "end_date": "2020-02-15",
+        "location": "Prague, Czech Republic",
+        "sponsor": [
+            "Avast Software"
+        ]
+    },
+    {
+        "start_date": "2019-11-04",
+        "end_date": "2019-11-09",
+        "location": "Belfast, Northern Ireland",
+        "sponsor": [
+            "clearpool.io",
+            "Archer-Yates",
+            "Microsoft",
+            "C++ Alliance",
+            "MCS Group",
+            "Instil",
+            "Standard C++ Foundation"
+        ]
+    },
+    {
+        "start_date": "2019-07-15",
+        "end_date": "2019-07-20",
+        "location": "Cologne, Germany",
+        "sponsor": [
+            "Nicolai Josuttis",
+            "Standard C++ Foundation"
+        ]
+    },
+    {
+        "start_date": "2019-02-18",
+        "end_date": "2019-02-23",
+        "location": "Kona, HI, USA",
+        "sponsor": [
+            "Standard C++ Foundation",
+            "NVIDIA",
+            "Plum Hall",
+            "Jens Maurer"
+        ]
+    },
+    {
+        "start_date": "2018-11-05",
+        "end_date": "2018-11-10",
+        "location": "San Diego, CA, USA",
+        "sponsor": [
+            "Qualcomm"
+        ]
+    },
+    {
+        "start_date": "2018-06-04",
+        "end_date": "2018-06-09",
+        "location": "Rapperswil, Switzerland",
+        "sponsor": [
+            "HSR Hochschule für Technik",
+            "Zühlke",
+            "Netcetera",
+            "Bbv",
+            "Crealogix",
+            "Meeting C++",
+            "SNV",
+            "BMW"
+        ]
+    },
+    {
+        "start_date": "2018-03-12",
+        "end_date": "2018-03-17",
+        "location": "Jacksonville, FL, USA",
+        "sponsor": [
+            "Standard C++ Foundation",
+            "Perennial"
+        ]
+    },
+    {
+        "start_date": "2017-11-06",
+        "end_date": "2017-11-11",
+        "location": "Albuquerque, NM, USA",
+        "sponsor": [
+            "Sandia National Laboratories"
+        ]
+    },
+    {
+        "start_date": "2017-07-10",
+        "end_date": "2017-07-15",
+        "location": "Toronto, Canada",
+        "sponsor": [
+            "University of Toronto",
+            "Fields Institute",
+            "Waterfront International",
+            "Codeplay",
+            "IBM",
+            "Google",
+            "Christie Digital"
+        ]
+    },
+    {
+        "start_date": "2017-02-27",
+        "end_date": "2017-03-04",
+        "location": "Kona, HI, USA",
+        "sponsor": [
+            "Standard C++ Foundation",
+            "Plum Hall"
+        ]
+    },
+    {
+        "start_date": "2016-11-07",
+        "end_date": "2016-11-12",
+        "location": "Issaquah, WA, USA",
+        "sponsor": [
+            "Microsoft",
+            "Standard C++ Foundation"
+        ]
+    },
+    {
+        "start_date": "2016-06-20",
+        "end_date": "2016-06-25",
+        "location": "Oulu, Finland",
+        "sponsor": [
+            "Symbio"
+        ]
+    },
+    {
+        "start_date": "2016-02-29",
+        "end_date": "2016-03-05",
+        "location": "Jacksonville, FL, USA",
+        "sponsor": [
+            "INCITS",
+            "Standard C++ Foundation",
+            "Perennial"
+        ]
+    },
+    {
+        "start_date": "2015-10-19",
+        "end_date": "2015-10-24",
+        "location": "Kona, HI, USA",
+        "sponsor": [
+            "Plum Hall",
+            "Standard C++ Foundation"
+        ]
+    },
+    {
+        "start_date": "2015-05-04",
+        "end_date": "2015-05-09",
+        "location": "Lenexa, Kansas, USA",
+        "sponsor": [
+            "Lexmark"
+        ]
+    },
+    {
+        "start_date": "2015-02-23",
+        "end_date": "2015-02-27",
+        "location": "Cologne, Germany",
+        "sponsor": [
+            "Parstream",
+            "IT-Communication"
+        ]
+    },
+    {
+        "start_date": "2015-01-26",
+        "end_date": "2015-01-28",
+        "location": "Skillman, New Jersey, USA",
+        "sponsor": [
+            "Edison Design Group",
+            "Bloomberg."
+        ]
+    },
+    {
+        "start_date": "2014-11-03",
+        "end_date": "2014-11-08",
+        "location": "Urbana-Champaign, IL, USA",
+        "sponsor": [
+            "Riverbed",
+            "University of Illinois at Urbana-Champaign"
+        ]
+    },
+    {
+        "start_date": "2014-06-16",
+        "end_date": "2014-06-21",
+        "location": "Rapperswil, Switzerland",
+        "sponsor": [
+            "HSR Hochschule für Technik"
+        ]
+    },
+    {
+        "start_date": "2014-02-10",
+        "end_date": "2014-02-15",
+        "location": "Issaquah, WA, USA",
+        "sponsor": [
+            "Microsoft",
+            "Standard C++ Foundation"
+        ]
+    },
+    {
+        "start_date": "2013-09-23",
+        "end_date": "2013-09-28",
+        "location": "Chicago, IL, USA",
+        "sponsor": [
+            "DRW Trading Group"
+        ]
+    },
+    {
+        "start_date": "2013-04-15",
+        "end_date": "2013-04-20",
+        "location": "Bristol, UK",
+        "sponsor": [
+            "ACCU",
+            "Google",
+            "Archer-Yates",
+            "GetCo",
+            "Red Hat",
+            "Gnu C++ User"
+        ]
+    },
+    {
+        "start_date": "2012-10-15",
+        "end_date": "2012-10-19",
+        "location": "Portland, OR, USA",
+        "sponsor": [
+            "Intel"
+        ]
+    },
+    {
+        "start_date": "2012-02-06",
+        "end_date": "2012-02-10",
+        "location": "Kona, HI, USA",
+        "sponsor": [
+            "Plum Hall",
+            "Bloomberg"
+        ]
+    },
+    {
+        "start_date": "2011-08-15",
+        "end_date": "2011-08-19",
+        "location": "Bloomington, IN, USA",
+        "sponsor": [
+            "University of Indiana"
+        ]
+    },
+    {
+        "start_date": "2011-03-21",
+        "end_date": "2011-03-26",
+        "location": "Madrid, Spain",
+        "sponsor": [
+            "Telefónica I+D"
+        ]
+    },
+    {
+        "start_date": "2010-11-08",
+        "end_date": "2010-11-13",
+        "location": "Batavia, IL, USA",
+        "sponsor": [
+            "Fermilab"
+        ]
+    },
+    {
+        "start_date": "2010-08-02",
+        "end_date": "2010-08-07",
+        "location": "Rapperswil, Switzerland",
+        "sponsor": [
+            "HSR Hochschule für Technik"
+        ]
+    },
+    {
+        "start_date": "2010-03-08",
+        "end_date": "2010-03-13",
+        "location": "Pittsburgh, PA, USA",
+        "sponsor": [
+            "CERT"
+        ]
+    },
+    {
+        "start_date": "2009-10-19",
+        "end_date": "2009-10-24",
+        "location": "Santa Cruz, CA, USA",
+        "sponsor": [
+            "Dinkumware",
+            "EDG",
+            "Gimpel Software",
+            "Bloomberg"
+        ]
+    },
+    {
+        "start_date": "2009-07-13",
+        "end_date": "2009-07-18",
+        "location": "Frankfurt, Germany",
+        "sponsor": [
+            "Interactive Data Managed Solutions"
+        ]
+    },
+    {
+        "start_date": "2009-03-02",
+        "end_date": "2009-03-06",
+        "location": "Summit, NJ, USA",
+        "sponsor": [
+            "Edison Design Group",
+            "Dinkumware",
+            "Sun",
+            "Plum Hall"
+        ]
+    },
+    {
+        "start_date": "2008-09-14",
+        "end_date": "2008-09-20",
+        "location": "San Francisco, CA, USA",
+        "sponsor": [
+            "Google"
+        ]
+    },
+    {
+        "start_date": "2008-06-08",
+        "end_date": "2008-06-13",
+        "location": "Sophia Antipolis, France",
+        "sponsor": [
+            "Texas A&M University"
+        ]
+    },
+    {
+        "start_date": "2008-02-24",
+        "end_date": "2008-02-29",
+        "location": "Bellevue, WA, USA",
+        "sponsor": [
+            "Microsoft"
+        ]
+    },
+    {
+        "start_date": "2007-09-30",
+        "end_date": "2007-10-06",
+        "location": "Kona, HI, USA",
+        "sponsor": [
+            "Plum Hall"
+        ]
+    },
+    {
+        "start_date": "2007-07-15",
+        "end_date": "2007-07-20",
+        "location": "Toronto, Canada",
+        "sponsor": [
+            "IBM"
+        ]
+    },
+    {
+        "start_date": "2007-04-15",
+        "end_date": "2007-04-20",
+        "location": "Oxford, UK",
+        "sponsor": [
+            "ACCU",
+            "Google"
+        ]
+    },
+    {
+        "start_date": "2006-10-15",
+        "end_date": "2006-10-20",
+        "location": "Portland, OR, USA",
+        "sponsor": [
+            "Intel"
+        ]
+    },
+    {
+        "start_date": "2006-04-02",
+        "end_date": "2006-04-07",
+        "location": "Berlin, Germany",
+        "sponsor": [
+            "SAP"
+        ]
+    },
+    {
+        "start_date": "2005-10-02",
+        "end_date": "2005-10-08",
+        "location": "Mt. Tremblant, PQ, Canada",
+        "sponsor": [
+            "Maurya",
+            "Sun",
+            "Intel"
+        ]
+    },
+    {
+        "start_date": "2005-04-10",
+        "end_date": "2005-04-15",
+        "location": "Lillehammer, Norway",
+        "sponsor": [
+            "Norwegian Standards"
+        ]
+    },
+    {
+        "start_date": "2004-10-17",
+        "end_date": "2004-10-22",
+        "location": "Redmond, WA, USA",
+        "sponsor": [
+            "Microsoft"
+        ]
+    },
+    {
+        "start_date": "2004-03-21",
+        "end_date": "2004-03-26",
+        "location": "Sydney, Australia",
+        "sponsor": [
+            "Standards Australia",
+            "Whitesmiths"
+        ]
+    },
+    {
+        "start_date": "2003-10-26",
+        "end_date": "2003-10-31",
+        "location": "Kona, HI, USA",
+        "sponsor": [
+            "Plum Hall"
+        ]
+    },
+    {
+        "start_date": "2003-04-06",
+        "end_date": "2003-04-11",
+        "location": "Oxford, UK",
+        "sponsor": [
+            "BSI"
+        ]
+    },
+    {
+        "start_date": "2002-10-22",
+        "end_date": "2002-10-27",
+        "location": "Santa Cruz, CA USA",
+        "sponsor": [
+            "Dinkumware"
+        ]
+    },
+    {
+        "start_date": "2002-04-21",
+        "end_date": "2002-04-26",
+        "location": "Curacao, Netherlands Antilles",
+        "sponsor": [
+            "Netherlands"
+        ]
+    },
+    {
+        "start_date": "2001-10-21",
+        "end_date": "2001-10-26",
+        "location": "Redmond, WA, USA",
+        "sponsor": [
+            "Microsoft"
+        ]
+    },
+    {
+        "start_date": "2001-04-30",
+        "end_date": "2001-05-04",
+        "location": "Copenhagen, Denmark",
+        "sponsor": [
+            "Danish Standards"
+        ]
+    },
+    {
+        "start_date": "2000-10-23",
+        "end_date": "2000-10-27",
+        "location": "Toronto, ON, Canada",
+        "sponsor": [
+            "IBM",
+            "PeerDirect",
+            "Xerox"
+        ]
+    },
+    {
+        "start_date": "2000-04-17",
+        "end_date": "2000-04-21",
+        "location": "Tokyo, Japan",
+        "sponsor": [
+            "ITSCJ",
+            "NEC"
+        ]
+    },
+    {
+        "start_date": "1999-10-20",
+        "end_date": "1999-10-26",
+        "location": "Kona, Hawaii, USA",
+        "sponsor": [
+            "Plum Hall"
+        ]
+    },
+    {
+        "start_date": "1999-04-11",
+        "end_date": "1999-04-16",
+        "location": "Dublin, Ireland",
+        "sponsor": [
+            "Irish Standards",
+            "O’Riordan"
+        ]
+    },
+    {
+        "start_date": "1998-10-06",
+        "end_date": "1998-10-09",
+        "location": "Santa Cruz, CA, USA",
+        "sponsor": [
+            "SGI",
+            "Plum Hall",
+            "Perennial"
+        ]
+    },
+    {
+        "start_date": "1998-03-08",
+        "end_date": "1998-03-13",
+        "location": "Sophia Antipolis, FR",
+        "sponsor": [
+            "AFNOR",
+            "Ilog"
+        ]
+    },
+    {
+        "start_date": "1997-11-09",
+        "end_date": "1997-11-14",
+        "location": "Morristown, New Jersey, USA",
+        "sponsor": [
+            "AT&T"
+        ]
+    },
+    {
+        "start_date": "1997-07-13",
+        "end_date": "1997-07-18",
+        "location": "Cambridge, UK",
+        "sponsor": [
+            "Programming Research"
+        ]
+    },
+    {
+        "start_date": "1997-03-09",
+        "end_date": "1997-03-14",
+        "location": "Nashua, NH, USA",
+        "sponsor": [
+            "Digital Equip. Corp."
+        ]
+    },
+    {
+        "start_date": "1996-11-01",
+        "end_date": "1996-11-01",
+        "location": "Kona, HI",
+        "sponsor": [
+            "Plum Hall"
+        ]
+    },
+    {
+        "start_date": "1996-07-01",
+        "end_date": "1996-07-01",
+        "location": "Stockholm, Sweden",
+        "sponsor": [
+            "Ericsson"
+        ]
+    },
+    {
+        "start_date": "1996-03-01",
+        "end_date": "1996-03-01",
+        "location": "Santa Cruz, CA",
+        "sponsor": [
+            "Borland"
+        ]
+    },
+    {
+        "start_date": "1995-11-01",
+        "end_date": "1995-11-01",
+        "location": "Tokyo, Japan",
+        "sponsor": [
+            "IBM"
+        ]
+    },
+    {
+        "start_date": "1995-07-01",
+        "end_date": "1995-07-01",
+        "location": "Monterey, CA",
+        "sponsor": [
+            "Sun Microsystems"
+        ]
+    },
+    {
+        "start_date": "1995-03-01",
+        "end_date": "1995-03-01",
+        "location": "Austin, TX",
+        "sponsor": [
+            "Motorola"
+        ]
+    },
+    {
+        "start_date": "1994-11-01",
+        "end_date": "1994-11-01",
+        "location": "Valley Forge, PA",
+        "sponsor": [
+            "Unisys"
+        ]
+    },
+    {
+        "start_date": "1994-07-01",
+        "end_date": "1994-07-01",
+        "location": "Waterloo, Canada",
+        "sponsor": [
+            "Watcom"
+        ]
+    },
+    {
+        "start_date": "1994-03-01",
+        "end_date": "1994-03-01",
+        "location": "San Diego, CA",
+        "sponsor": [
+            "ATT/NCR"
+        ]
+    },
+    {
+        "start_date": "1993-11-01",
+        "end_date": "1993-11-01",
+        "location": "San Jose, CA",
+        "sponsor": [
+            "Taligent"
+        ]
+    },
+    {
+        "start_date": "1993-07-01",
+        "end_date": "1993-07-01",
+        "location": "Munich, Germany",
+        "sponsor": [
+            "Siemens Nixdorf"
+        ]
+    },
+    {
+        "start_date": "1993-03-01",
+        "end_date": "1993-03-01",
+        "location": "Portland, OR",
+        "sponsor": [
+            "Sequent",
+            "Tektronix",
+            "Mentor Graphics"
+        ]
+    },
+    {
+        "start_date": "1992-11-01",
+        "end_date": "1992-11-01",
+        "location": "Boston, MA",
+        "sponsor": [
+            "OSF"
+        ]
+    },
+    {
+        "start_date": "1992-07-01",
+        "end_date": "1992-07-01",
+        "location": "Toronto, Canada",
+        "sponsor": [
+            "IBM"
+        ]
+    },
+    {
+        "start_date": "1992-03-01",
+        "end_date": "1992-03-01",
+        "location": "London, United Kingdom",
+        "sponsor": [
+            "Symantec"
+        ]
+    },
+    {
+        "start_date": "1991-11-01",
+        "end_date": "1991-11-01",
+        "location": "Dallas, TX",
+        "sponsor": [
+            "Texas Instruments"
+        ]
+    },
+    {
+        "start_date": "1991-06-01",
+        "end_date": "1991-06-01",
+        "location": "Lund, Sweden",
+        "sponsor": [
+            "Lund Institute"
+        ]
+    },
+    {
+        "start_date": "1991-03-01",
+        "end_date": "1991-03-01",
+        "location": "Nashua, NH",
+        "sponsor": [
+            "DEC"
+        ]
+    },
+    {
+        "start_date": "1990-11-01",
+        "end_date": "1990-11-01",
+        "location": "Palo Alto, CA",
+        "sponsor": [
+            "HP"
+        ]
+    },
+    {
+        "start_date": "1990-07-01",
+        "end_date": "1990-07-01",
+        "location": "Seattle, WA",
+        "sponsor": [
+            "Microsoft"
+        ]
+    },
+    {
+        "start_date": "1990-03-01",
+        "end_date": "1990-03-01",
+        "location": "Somerset, NJ",
+        "sponsor": [
+            "ATT"
+        ]
+    },
+    {
+        "start_date": "1989-12-01",
+        "end_date": "1989-12-01",
+        "location": "Washington, DC",
+        "sponsor": [
+            "Hewlett-Packard"
+        ]
+    }
+]
