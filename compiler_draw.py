@@ -62,7 +62,8 @@ COMPILER_VERSIONS = {
             "18.1.0": "2024-03-05",
             "19.1.0": "2024-09-17",
             "20.1.0": "2025-03-04",
-            "21.0.0": datetime.now().date().isoformat()
+            "21.1.0": "2025-08-26",
+            "22.0.0": datetime.now().date().isoformat()
         },
         "color": "tab:orange"
     },
